@@ -1,15 +1,15 @@
 {
-	"name": "theme-dracula",
+	"name": "theme-dracula-v2",
 	"version": "2.24.1",
 	"displayName": "Dracula Official",
 	"homepage": "https://draculatheme.com/",
 	"description": "Official Dracula Theme. A dark theme for many editors, shells, and more.",
-	"publisher": "dracula-theme",
+	"publisher": "pdziewa",
 	"license": "MIT",
 	"scripts": {
 		"build": "node ./scripts/build.js",
 		"lint": "node ./scripts/lint.js",
-		"package": "vsce package -o ./bin/dracula.vsix",
+		"package": "vsce package -o draculav2.vsix",
 		"vscode:prepublish": "npm run build",
 		"vsce-publish": "vsce publish"
 	},
@@ -51,14 +51,9 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Dracula",
+				"label": "Dracula v2",
 				"uiTheme": "vs-dark",
 				"path": "./theme/dracula.json"
-			},
-			{
-				"label": "Dracula Soft",
-				"uiTheme": "vs-dark",
-				"path": "./theme/dracula-soft.json"
 			}
 		]
 	},
